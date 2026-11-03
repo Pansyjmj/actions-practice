@@ -7,5 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Get my code
+        uses: actions/checkout@v4
+
+      - name: Show my files
+        run: ls -la
+
       - name: Print a greeting
         run: echo "Hello from the robot!"
